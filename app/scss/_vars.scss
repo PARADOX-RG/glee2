@@ -2,6 +2,7 @@ $accent: #436372;
 $default: #8b8b8b;
 $title: #191919;
 $text: #7b7b7b;
+$regular: #243f4d;
 
 %dmsans-700{
     font-family: 'DMSans-Bold', sans-serif;
@@ -30,4 +31,12 @@ $text: #7b7b7b;
 %rubik-300{
     font-family: 'Rubik-Light', sans-serif;
     font-weight: 300;
+}
+
+%checkbox-hidden{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
 }
