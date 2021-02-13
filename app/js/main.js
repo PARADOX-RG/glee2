@@ -87,4 +87,8 @@ $(function(){
         
     });
 
+    var mixer1 = mixitup('.design-content', {
+        
+    });
+
 });
