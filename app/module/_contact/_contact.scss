@@ -1,0 +1,185 @@
+.contact{
+    padding: 120px 0 120px;
+    &__subtitle{
+        color: #a3bbc8;
+        @extend %dmsans-700;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+    }
+    &__title{
+        color: $accent;
+        @extend %dmsans-700;
+        font-size: 36px;
+        margin-bottom: 70px;
+        display: flex;
+        justify-content: center;
+    }
+    &__info-item{
+        margin-bottom: 120px;
+    }
+    &__info-list{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__info-link{
+        background-color: #fbfbfb;
+        width: 370px;
+        height: 380px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            top: 64px;
+            left: 145px;
+            border-radius: 18px;
+        }
+        .contact__info-link__img{
+            position: absolute;
+            width: 37px;
+            height: 45px;
+            top: 82px;
+            left: 166px;
+            &-address{
+                left: 169px;
+            }
+        }
+        h5{
+            text-align: center;
+            @extend %dmsans-700;
+            font-size: 20px;
+            color: #222;
+            margin-bottom: 30px;
+        }
+        p{
+            text-align: center;
+            color: #565872;
+            width: 255px;
+            margin: 0 auto;
+            margin-bottom: 80px;
+        }
+    }
+    &__info-link:hover{
+        border: 2px solid #a3bbc8;
+        &::before{
+            background-color: #a3bbc8;
+        }
+        &__phone::after{
+            color: #fff;
+            fill: #fff;
+        }
+        .contact__info-link__img{
+            path{
+                fill: #fff;
+            }
+        }
+    }  
+    &__bottom{
+        display: flex;
+    }
+    &__form{
+        width: 620px;
+        margin-right: 50px;
+        &-input__name,
+        &-input__email{
+            width: 300px;
+            padding: 10px 25px 10px 20px;
+            margin-bottom: 25px;
+            background-color: #fafafa;
+            border: none;
+        }
+        &-input__name{
+            margin-right: 15px;
+            position: relative;
+            &::before{
+               content: '';
+               position: absolute;
+               background-image: url('../images/icons/user.svg');
+               width: 20px;
+               height: 20px;
+               top: 0;
+               right: 0;
+            }
+        }
+        &-textarea{
+            width: 100%;
+            height: 175px;
+            padding: 10px 40px 10px 20px;
+            margin-bottom: 30px;
+            background-color: #fafafa;
+            border: none;
+            resize: none;
+            position: relative;
+            
+        }
+        &-btn{
+            padding: 10px 35px;
+            color: #fff;
+            background-color: #a3bbc8;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    }
+}
+
+.input__name{
+    display: inline-block;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        background-image: url('../images/icons/user.svg');
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        top: 12px;
+        right: 36px;
+        z-index: 1;
+    }
+}
+
+.input__email{
+    display: inline-block;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        background-image: url('../images/icons/email.svg');
+        background-repeat: no-repeat;
+        width: 18px;
+        height: 15px;
+        top: 16px;
+        right: 24px;
+        z-index: 1;
+    }
+}
+
+.textarea{
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    &::before{
+        content: '';
+        position: absolute;
+        background-image: url('../images/icons/comment.svg');
+        background-repeat: no-repeat;
+        width: 18px;
+        height: 15px;
+        top: 12px;
+        right: 36px;
+        z-index: 1;
+
+    }
+}
+
+#map {
+    width: 500px;
+    height: 335px;
+}

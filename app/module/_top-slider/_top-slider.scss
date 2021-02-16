@@ -1,0 +1,76 @@
+.top-slider{
+    background-color: #fcd7b6;
+    height: 820px;
+    max-width: 1770px;
+    margin: 0 auto;
+    &__inner{
+        margin-bottom: 50px;
+    }
+    &__item{
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+    }
+    &__content{
+        max-width: 430px;
+        width: 100%;
+        margin-right: 100px;
+    }
+    &__title{
+        @extend %rubik-500;
+        color: #243f4d;
+        font-size: 72px;
+        margin-bottom: 45px;
+        line-height: 70px;
+    }
+    &__text{
+        color: #243f4d; 
+        @extend %rubik-400;
+        font-size: 18px;
+        margin-bottom: 45px;
+    }
+    &__link{
+        background-color: #a3bbc8;
+        padding: 23px 100px 23px 27px;
+        color: #fff;
+        position: relative;
+        &::after{
+            content: "";
+            background-image: url('../images/icons/arrow.svg');
+            width: 22px;
+            height: 9px;
+            position: absolute;
+            top: 26px;
+            right: 21px;
+        }
+    }
+    &__img{
+        padding-top: 100px;
+    }
+    .slick-dots{
+        display: flex;
+        justify-content: center;
+        li{
+            
+            button{
+                font-size: 12px;
+                color: #243f4d;
+                background-color: rgb(255, 255, 255);
+                opacity: 0.5;
+                border: 1px solid #fff;
+                width: 29px;
+                height: 29px;
+                border-radius: 50%;
+                margin-left: 5px;
+                
+            }
+            &.slick-active{
+                button{
+                    opacity: 1;
+                    background-color: #fff;
+                    outline: none;
+                }
+            }
+        }
+    }
+}

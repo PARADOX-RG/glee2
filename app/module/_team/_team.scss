@@ -1,0 +1,91 @@
+.team{
+    padding-top: 120px;
+    &__inner{
+        display: flex;
+    }
+    &__info{
+        max-width: 300px;
+        margin-right: 100px;
+    }
+    &__title{
+        @extend %dmsans-700;
+        font-size: 36px;
+        color: $regular;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+    &__text{
+        color: $regular;
+        margin-bottom: 40px;
+    }
+    &__join{
+        color: #fff;
+        font-size: 15px;
+        background-color: #a3bbc8;
+        @extend %dmsans-500;
+        padding: 15px 60px 15px 17px;
+        border-radius: 5px;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            background-image: url('../images/icons/arrow.svg');
+            height: 9px;
+            width: 22px;
+            top: 19px;
+            right: 20px;
+        }
+    }
+    &__items{
+        width: 770px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+    &__more{
+        background-color: #fff;
+        width: 332px;
+        height: 100px;
+        box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+        position: relative;
+        margin-top: -42px;     
+    }
+    &__item{
+        width: 370px;
+        height: 315px;
+        margin-bottom: 100px;
+        position: relative;
+        
+    }
+    &__name{
+        padding: 23px 0 0 30px;
+        @extend %dmsans-700;
+        font-size: 22px;
+        color: $accent;
+        position: relative;
+    }
+    &__prof{
+        padding: 10px 0 25px 30px;
+        color: #565872; 
+    }
+    &__img-google{
+        display: inline-block;
+        position: absolute;
+        right: 35px;
+        top: 47px;
+    }
+
+    &__img-inst{
+        display: inline-block;
+        position: absolute;
+        right: 80px;
+        top: 45px;
+        background: #f6f6f6;
+    }
+    
+    &__img + .team__img{
+        margin-left: 40px;
+    }
+
+    
+}

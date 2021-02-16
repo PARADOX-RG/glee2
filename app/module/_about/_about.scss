@@ -1,0 +1,99 @@
+.about{
+    padding: 120px 0 120px;
+    &__img{
+        width: 570px;
+    }
+    &__top{
+        display: flex;
+    }
+    &__content{
+        width: 600px;
+        align-items: left;
+        padding-left: 60px;
+    }
+    &__num{
+        display: flex;
+        @extend %rubik-700;
+        font-size: 140px;
+        line-height: 32px;
+        color: #a3bbc8;
+        margin-bottom: 50px;
+        padding-top: 100px;
+        &-number{
+            padding-top: 17px;
+        }
+        &-item{
+            flex-direction: column;
+        }
+        &-text{
+            @extend %rubik-400;
+            font-size: 16px;
+            line-height: 30px;
+            color: $regular;
+            margin-left: 35px;
+        }
+    }
+    &__title{
+        @extend %dmsans-700;
+        font-size: 36px;
+        line-height: 32px;
+        color: $regular;
+        margin-bottom: 45px;
+    }
+    &__text{
+        color: $regular;
+        padding-bottom: 65px;
+        border-bottom: 2px solid #ebeef3;
+    }
+    &__info{
+        display: flex;
+        margin-top: 30px;
+        &-item{
+           flex-direction: column; 
+           margin-left: 100px;
+           position: relative;
+           &__project::before{
+               content: '';
+               position: absolute;
+               background-image: url('../images/icons/project.svg');
+               background-repeat: no-repeat;
+               background-size: cover;
+               top: 0;
+               left: -60px;
+               width: 37px;
+               height: 38px;
+           }
+           &__revenue::before{
+               content: '';
+               position: absolute;
+               background-image: url('../images/icons/revenue.svg');
+               background-repeat: no-repeat;
+               background-size: cover;
+               top: 0;
+               left: -60px;
+               width: 43px;
+               height: 39px;
+           }
+           &__awards::before{
+               content: '';
+               position: absolute;
+               background-image: url('../images/icons/awards.svg');
+               background-repeat: no-repeat;
+               background-size: cover;
+               top: 0;
+               left: -60px;
+               width: 42px;
+               height: 41px;
+           }
+        }
+        &-numb{
+            @extend %dmsans-700;
+            font-size: 36px;
+            color: $regular;
+        }
+        &-text{
+            @extend %dmsans-700;
+            color: #4c4c4c;
+        }
+    }
+}

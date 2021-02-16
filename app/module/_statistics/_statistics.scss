@@ -1,0 +1,42 @@
+.statistics{
+    background-color: #fcd7b6;
+    height: 320px;
+    &__items{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 70px;
+        text-align: center;
+    }
+    &-item{
+        display: flex;
+        flex-direction: column;
+    }
+    &__img{
+        margin-bottom: 22px;
+        height: 64px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            background-color: #a3bbc8;
+            width: 33px;
+            height: 33px;
+            left: 0;
+            top: 0;
+        }
+
+    }
+    &__numb{
+        @extend %dmsans-700;
+        font-size: 36px;
+        color: $regular;
+        line-height: 32px;
+        margin-bottom: 5px;
+    }
+    &__text{
+        @extend %dmsans-700;
+        font-size: 18px;
+        line-height: 32px;
+        color: $regular;
+    }
+}
