@@ -7,3 +7,43 @@
         align-items: center;
     }
 }
+@media (max-width: 1200px){
+    .partners{
+        &__list{
+            flex-wrap: wrap;
+        }
+        &__item{
+            flex-wrap: wrap;
+        }
+    }
+}
+@media (max-width: 950px){
+    .partners{
+        padding: 75px 0 70px;
+        &__list{
+            justify-content: center;
+        }
+        &__item{
+            margin: 15px 30px;
+        }
+    }
+}
+@media (max-width: 700px){
+    .partners{
+        padding: 55px 0 50px;
+        &__item{
+            margin: 15px 20px;
+        }
+    }
+}
+@media (max-width: 410px){
+    .partners{
+        padding: 35px 0 30px;
+        &__item{
+            margin: 15px 15px;
+        }
+    }
+}
+@media (max-width: 410px){
+
+}
