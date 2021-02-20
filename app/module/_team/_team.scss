@@ -54,8 +54,7 @@
         width: 370px;
         height: 315px;
         margin-bottom: 100px;
-        position: relative;
-        
+        position: relative;  
     }
     &__name{
         padding: 23px 0 0 30px;
@@ -74,7 +73,6 @@
         right: 35px;
         top: 47px;
     }
-
     &__img-inst{
         display: inline-block;
         position: absolute;
@@ -82,10 +80,7 @@
         top: 45px;
         background: #f6f6f6;
     }
-    
     &__img + .team__img{
         margin-left: 40px;
-    }
-
-    
+    } 
 }
