@@ -19,6 +19,7 @@
     &__list{
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
     }
     .breadcrumbs__item + .breadcrumbs__item{
         margin-left: 20px;

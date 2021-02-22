@@ -115,8 +115,7 @@
             background-color: #fafafa;
             border: none;
             resize: none;
-            position: relative;
-            
+            position: relative;  
         }
         &-btn{
             padding: 10px 35px;
@@ -175,11 +174,84 @@
         top: 12px;
         right: 36px;
         z-index: 1;
-
     }
 }
 
 #map {
     width: 500px;
     height: 335px;
+}
+@media (max-width: 1230px){
+    .contact{
+        &__bottom{
+            flex-direction: column;
+            .input__name{
+                width: 100%;  
+            }
+            
+            .input__email{
+                width: 100%;
+                &::before{
+                    top: 16px;
+                    right: 36px;
+                }
+            }
+        }
+        &__form{
+            width: 100%;
+            margin-bottom: 20px;
+            &-input__name,
+        &-input__email{
+            width: 100%;
+            padding: 10px 25px 10px 20px;
+            margin-bottom: 25px;
+            background-color: #fafafa;
+            border: none;
+        }
+        }
+    }
+    #map {
+        width: 100%;
+        height: 335px;
+    }
+}
+@media (max-width: 1200px){
+    .contact{
+        &__info-list{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        &__info-item{
+            margin: 0 15px 80px 15px;
+        }
+    }
+}
+@media (max-width: 450px){
+    .contact{
+        &__info-link{
+            padding: 0 8px;
+            width: 100%;
+            height: 300px;
+            &::before{
+                top: 26px;
+                left: 97px;
+            }
+        }
+        &__info-item{
+            width: none;
+            max-width: none;
+        }
+        .contact__info-link__img{
+            position: absolute;
+            width: 37px;
+            height: 45px;
+            top: 44px;
+            left: 118px;
+            &-address{
+                top: 40px;
+                left: 121px;
+            }
+        }
+    }
 }

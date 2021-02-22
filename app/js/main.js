@@ -1,5 +1,9 @@
 $(function(){
 
+    $('.shop__filter-btn').on('click', function(){
+        $('.shop__filter').slideToggle();
+    });
+
     $('.menu__btn').on('click', function(){
         $('.menu__list').toggleClass('menu__list--active');
     });
@@ -9,8 +13,30 @@ $(function(){
         slidesToScroll: 1,
         speed: 300,
         prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/angel-prev.svg" alt=""></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="images/icons/angel-next.svg" alt=""></button>'
-        
+        nextArrow: '<button type="button" class="slick-next"><img src="images/icons/angel-next.svg" alt=""></button>',
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 900,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
+            }
+        ]
     });
 
     $('.details-tabs__top-item').on('click', function(e){
@@ -36,7 +62,15 @@ $(function(){
         asNavFor: '.details-slide__thumb',
         draggable: false,
         arrows: false,
-        fade: true
+        fade: true,
+        responsive: [
+            {
+                breakpoint: 1201,
+                settings: {
+                    draggable: true,
+                }
+            },
+        ]
     });
 
 

@@ -44,9 +44,9 @@
         max-width: 210px;
         width: 100%;
         padding: 10px 5px;
+        background-color: #fef7f0;
         &::placeholder{
             color: #234969;
-            background-color: #fef7f0;
             font-size: 12px;
             @extend %dmsans-400;
             

@@ -1,15 +1,17 @@
 .statistics{
     background-color: #fcd7b6;
-    height: 320px;
+    height: auto;
     &__items{
         display: flex;
         justify-content: space-around;
-        padding-top: 70px;
+        padding: 70px 0;
         text-align: center;
+        flex-wrap: wrap;
     }
     &-item{
         display: flex;
         flex-direction: column;
+        margin: 0 40px;
     }
     &__img{
         margin-bottom: 22px;
@@ -24,7 +26,6 @@
             left: 0;
             top: 0;
         }
-
     }
     &__numb{
         @extend %dmsans-700;
@@ -38,5 +39,15 @@
         font-size: 18px;
         line-height: 32px;
         color: $regular;
+    }
+}
+@media (max-width: 1050px){
+    .statistics{
+        &__items{
+            padding: 50px 0;
+        }
+        &-item{
+            margin: 10px 40px;
+        }
     }
 }

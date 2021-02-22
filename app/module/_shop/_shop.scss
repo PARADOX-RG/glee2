@@ -14,6 +14,9 @@
         margin-bottom: 100px;
         width: 875px;
     }
+    &__filter-btn{
+        display: none;
+    }
 }
 
 .filter{
@@ -84,8 +87,8 @@
             background-size: cover;
             width: 6px;
             height: 10px;
-            top: 15px;
-            left: 240px;
+            top: 22px;
+            right: 17px;
         }
     }
     &-text{
@@ -159,7 +162,6 @@
     &-span{
         color: $regular;
         font-size: 14px;
-
     }
 }
 
@@ -198,7 +200,6 @@
         margin-bottom: 5px;
         cursor: pointer;
     }
-    
 }
 
 .filter__recent{
@@ -390,4 +391,72 @@
 
         }
     }
+}
+@media (max-width: 1200px){
+    .filter__title {
+        margin-left: 15px;
+    }
+    .filter__price-span {
+        margin-left: 15px;
+    }
+    .irs--flat .irs-line {
+        left: 3px;
+        right: 6px;
+    }
+    .irs .irs--flat .js-irs-0{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .shop{
+        padding-top: 60px;
+        &__inner{
+            display: block;
+        }
+        &__content{
+            width: 100%;
+            justify-content: center;
+            grid-gap: 20px;
+        }
+        &__filter{
+            display: none;
+            width: 100%;
+            position: absolute;
+            z-index: 100;
+            background: #fff;
+            top: 20px;
+            left: 0;
+            margin-right: 0;
+            padding-bottom: 60px;
+        }
+        &__filter-btn{
+            display: block;
+            border: none;
+            background: $accent;
+            padding: 0;
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            right: 0;
+            bottom: 50px;
+            z-index: 101;
+            cursor: pointer;
+            background-image: url('../images/icons/filter.svg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            outline: none;
+        }
+    }
+    .filter__item{
+        width: 100%;
+    }
+    .filter__category{
+        &-checkbox{
+            width: 100%;
+            &::before{
+                top: 22px;
+                right: 17px;
+            }
+        }
+    }
+    
 }

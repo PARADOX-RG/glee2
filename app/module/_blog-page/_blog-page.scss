@@ -1,6 +1,5 @@
 .blog-page{
     padding: 120px 0 120px;
-    
     &__inner{
         display: flex;
     }
@@ -572,5 +571,119 @@
         right: 36px;
         z-index: 1;
 
+    }
+}
+@media (max-width: 1200px){
+    .blog-page{
+        &__inner{
+            flex-direction: column;
+        }
+        .input__name{
+            width: 100%;  
+        }
+        
+        .input__email{
+            width: 100%;
+            &::before{
+                top: 16px;
+                right: 36px;
+            }
+        }
+        .comments-leave__input-name {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .comments-leave__input-email {
+            width: 100%;
+        }
+        &__aside{
+            width: 100%;
+            order: -1;
+            .filter__post,
+            .filter__category{
+                display: none;
+            }
+        }
+        &__search{
+            width: 70%;
+            margin: 40px auto;
+        }
+        &__search-input{
+            width: 95%;
+
+        }
+    }
+    .blog{
+        &-one__content{
+        margin-right: 0;
+        margin: 0 auto;
+        }
+    }
+
+}
+@media (max-width: 950px){
+    .blog-page{
+        padding: 80px 0 80px;
+        &__item-img{
+            width: 100%;
+            height: auto;
+            padding-right: 10px;
+        }
+    }
+    .blog-one{
+        &__content{
+            width: 100%;
+        }
+    }
+    .comments{
+        width: 96%;
+    }
+}
+@media (max-width: 650px){
+    .blog-page{
+        padding: 60px 0 60px;
+    }
+    .blog-page__info {
+        width: 236px;
+        padding: 8px 10px;
+        margin-top: -46px;
+    }
+    .h4{
+        font-size: 27px;
+        margin: 20px 0;
+    }
+    .blog-one{
+        &__author-img{
+            display: none;
+        }
+    }
+    .comments-item__img{
+        display: none;
+    }
+    .comments{
+        &-item:nth-child(3){
+            margin-left: 50px;
+        }
+    }
+}
+@media (max-width: 500px){
+    .blog-page{
+        padding: 40px 0 40px;
+    }
+    h4{
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    .blog-one{
+        &__box{
+            flex-direction: column;
+        }
+    }
+}
+@media (max-width: 410px){
+    .comments{
+        &-item:nth-child(3){
+            margin-left: 30px;
+        }
     }
 }
